@@ -54,6 +54,7 @@
             this.btnModelZaliha.TabIndex = 1;
             this.btnModelZaliha.Text = "MODELI ZALIHA";
             this.btnModelZaliha.UseVisualStyleBackColor = false;
+            this.btnModelZaliha.Click += new System.EventHandler(this.btnModelZaliha_Click);
             // 
             // FormPocetna
             // 
