@@ -28,26 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.rb = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
-            // radioButton1
+            // rb
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(283, 116);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(103, 20);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "radioButton1";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rb.AutoSize = true;
+            this.rb.Location = new System.Drawing.Point(283, 116);
+            this.rb.Name = "rb";
+            this.rb.Size = new System.Drawing.Size(40, 20);
+            this.rb.TabIndex = 0;
+            this.rb.TabStop = true;
+            this.rb.Text = "rb";
+            this.rb.UseVisualStyleBackColor = true;
             // 
             // FormPocetna
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.rb);
             this.Name = "FormPocetna";
             this.Text = "Početna";
             this.ResumeLayout(false);
@@ -57,7 +57,7 @@
 
         #endregion
 
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton rb;
     }
 }
 
