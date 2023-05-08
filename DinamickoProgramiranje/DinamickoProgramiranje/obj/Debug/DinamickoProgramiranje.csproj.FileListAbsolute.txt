@@ -1,0 +1,11 @@
+C:\Users\Matej\Documents\GitHub\Dinamicko_programiranje\DinamickoProgramiranje\DinamickoProgramiranje\bin\Debug\DinamickoProgramiranje.exe.config
+C:\Users\Matej\Documents\GitHub\Dinamicko_programiranje\DinamickoProgramiranje\DinamickoProgramiranje\bin\Debug\DinamickoProgramiranje.exe
+C:\Users\Matej\Documents\GitHub\Dinamicko_programiranje\DinamickoProgramiranje\DinamickoProgramiranje\bin\Debug\DinamickoProgramiranje.pdb
+C:\Users\Matej\Documents\GitHub\Dinamicko_programiranje\DinamickoProgramiranje\DinamickoProgramiranje\obj\Debug\DinamickoProgramiranje.csproj.AssemblyReference.cache
+C:\Users\Matej\Documents\GitHub\Dinamicko_programiranje\DinamickoProgramiranje\DinamickoProgramiranje\obj\Debug\DinamickoProgramiranje.csproj.SuggestedBindingRedirects.cache
+C:\Users\Matej\Documents\GitHub\Dinamicko_programiranje\DinamickoProgramiranje\DinamickoProgramiranje\obj\Debug\DinamickoProgramiranje.FormPocetna.resources
+C:\Users\Matej\Documents\GitHub\Dinamicko_programiranje\DinamickoProgramiranje\DinamickoProgramiranje\obj\Debug\DinamickoProgramiranje.Properties.Resources.resources
+C:\Users\Matej\Documents\GitHub\Dinamicko_programiranje\DinamickoProgramiranje\DinamickoProgramiranje\obj\Debug\DinamickoProgramiranje.csproj.GenerateResource.cache
+C:\Users\Matej\Documents\GitHub\Dinamicko_programiranje\DinamickoProgramiranje\DinamickoProgramiranje\obj\Debug\DinamickoProgramiranje.csproj.CoreCompileInputs.cache
+C:\Users\Matej\Documents\GitHub\Dinamicko_programiranje\DinamickoProgramiranje\DinamickoProgramiranje\obj\Debug\DinamickoProgramiranje.exe
+C:\Users\Matej\Documents\GitHub\Dinamicko_programiranje\DinamickoProgramiranje\DinamickoProgramiranje\obj\Debug\DinamickoProgramiranje.pdb

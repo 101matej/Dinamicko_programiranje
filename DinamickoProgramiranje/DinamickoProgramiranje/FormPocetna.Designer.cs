@@ -28,36 +28,52 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.rb = new System.Windows.Forms.RadioButton();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPocetna));
+            this.btnDinamickoProgramiranje = new System.Windows.Forms.Button();
+            this.btnModelZaliha = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // rb
+            // btnDinamickoProgramiranje
             // 
-            this.rb.AutoSize = true;
-            this.rb.Location = new System.Drawing.Point(283, 116);
-            this.rb.Name = "rb";
-            this.rb.Size = new System.Drawing.Size(40, 20);
-            this.rb.TabIndex = 0;
-            this.rb.TabStop = true;
-            this.rb.Text = "rb";
-            this.rb.UseVisualStyleBackColor = true;
+            this.btnDinamickoProgramiranje.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnDinamickoProgramiranje.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDinamickoProgramiranje.Location = new System.Drawing.Point(127, 325);
+            this.btnDinamickoProgramiranje.Name = "btnDinamickoProgramiranje";
+            this.btnDinamickoProgramiranje.Size = new System.Drawing.Size(391, 59);
+            this.btnDinamickoProgramiranje.TabIndex = 0;
+            this.btnDinamickoProgramiranje.Text = "DINAMIČKO PROGRAMIRANJE";
+            this.btnDinamickoProgramiranje.UseVisualStyleBackColor = false;
+            // 
+            // btnModelZaliha
+            // 
+            this.btnModelZaliha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnModelZaliha.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModelZaliha.Location = new System.Drawing.Point(127, 426);
+            this.btnModelZaliha.Name = "btnModelZaliha";
+            this.btnModelZaliha.Size = new System.Drawing.Size(391, 59);
+            this.btnModelZaliha.TabIndex = 1;
+            this.btnModelZaliha.Text = "MODELI ZALIHA";
+            this.btnModelZaliha.UseVisualStyleBackColor = false;
             // 
             // FormPocetna
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.rb);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(632, 533);
+            this.Controls.Add(this.btnModelZaliha);
+            this.Controls.Add(this.btnDinamickoProgramiranje);
             this.Name = "FormPocetna";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Početna";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.RadioButton rb;
+        private System.Windows.Forms.Button btnDinamickoProgramiranje;
+        private System.Windows.Forms.Button btnModelZaliha;
     }
 }
 
