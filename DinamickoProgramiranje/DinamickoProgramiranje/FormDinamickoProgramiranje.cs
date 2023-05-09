@@ -17,6 +17,8 @@ namespace DinamickoProgramiranje
         int potraznjaPrvogRazdoblja = 0;
         int vrijednostOdPrvogRazdoblja;
         int vrijednostDoPrvogRazdoblja;
+        int vrijednostOdSljedecegRazdoblja;
+        int vrijednostDoSljedecegRazdoblja;
         public FormDinamickoProgramiranje()
         {
             InitializeComponent();
@@ -62,8 +64,9 @@ namespace DinamickoProgramiranje
             
             izracunajQZaPrvoRazdoblje(out vrijednostOdPrvogRazdoblja, out vrijednostDoPrvogRazdoblja);
             popunjavanjeQZaPrvoRazdoblje();
+            izracunajIPopunifZaPrvoRazdoblje();
 
-            izracunajiPopunifZaPrvoRazdoblje();
+            izracunajIPopuniQifZaOstalaRazdoblja();
         }
 
         private bool provjeraIspravnostiUnesenihPodataka()
@@ -156,7 +159,7 @@ namespace DinamickoProgramiranje
             }
         }
 
-        private void izracunajiPopunifZaPrvoRazdoblje()
+        private void izracunajIPopunifZaPrvoRazdoblje()
         {
             int troskoviPoNarudzbi = int.Parse(tbTroskoviPoNarudzbi.Text);
             int troskoviSkladistenja = int.Parse(tbTroskoviSkladistenja.Text);
@@ -169,6 +172,83 @@ namespace DinamickoProgramiranje
                 dgvTablica1.Rows[brojRedaka].Cells[2].Value = troskoviPoNarudzbi + i * troskoviSkladistenja;
 
                 brojRedaka++;
+            }
+        }
+
+        private void izracunajIPopuniQifZaOstalaRazdoblja()
+        {
+            int iznosRata = int.Parse(tbIznosRata.Text);
+            int maksimalnaKolicinaZaliha = int.Parse(tbMaksimalnaKolicinaZaliha.Text);
+            int troskoviSkladistenja = int.Parse(tbTroskoviSkladistenja.Text);
+            int troskoviPoNarudzbi = int.Parse(tbTroskoviPoNarudzbi.Text);
+            int brojRazdoblja = int.Parse(tbBrojRazdoblja.Text);
+            int sljedeceRazdoblje;
+            int potraznjaSljedecegRazdoblja;
+            int brojRedaka = 0;
+            
+            for (sljedeceRazdoblje = 1; sljedeceRazdoblje < brojRazdoblja; sljedeceRazdoblje++)
+            {
+                string imeTekstualnogOkvira = "tbRazdoblje" + sljedeceRazdoblje;
+                TextBox sljedeceRazdobljeTextBox = panelKontejner.Controls.Find(imeTekstualnogOkvira, true).FirstOrDefault() as TextBox;
+
+                if (sljedeceRazdobljeTextBox != null)
+                {
+                    potraznjaSljedecegRazdoblja = int.Parse(sljedeceRazdobljeTextBox.Text);
+
+                    for (int i = 0; i <= maksimalnaKolicinaZaliha; i = i + iznosRata)
+                    {
+                        List<int> listaRezultata = new List<int>();
+                        List<int> listaNabave = new List<int>();
+                        vrijednostOdSljedecegRazdoblja = i + potraznjaSljedecegRazdoblja - maksimalnaKolicinaZaliha;
+                        if (vrijednostOdSljedecegRazdoblja < 0)
+                        {
+                            vrijednostOdSljedecegRazdoblja = 0;
+                        }
+                        vrijednostDoSljedecegRazdoblja = i + potraznjaSljedecegRazdoblja;
+
+                        for (int j = vrijednostOdSljedecegRazdoblja; j <= vrijednostDoSljedecegRazdoblja; j = j + iznosRata)
+                        {
+                            int nabava = j;
+                            listaNabave.Add(nabava);
+                            int zalihe = i;
+                            int uglataZagrada = zalihe + potraznjaSljedecegRazdoblja - nabava;
+                            int cijenaNabave = 0;
+                            if (nabava > 0)
+                            {
+                                cijenaNabave = troskoviPoNarudzbi;
+                            }
+                            int cijenaSkladistenja = zalihe * troskoviSkladistenja;
+                            string trazenaVrijednost = uglataZagrada.ToString();
+
+                            foreach (DataGridViewRow row in dgvTablica1.Rows)
+                            {
+                                if (row.Cells[0].Value != null && row.Cells[0].Value.ToString() == trazenaVrijednost)
+                                {
+                                    if (row.Cells[sljedeceRazdoblje * 2].Value != null)
+                                    {
+                                        string trazenaVrijednostfPrethodnogRazdoblja = row.Cells[sljedeceRazdoblje * 2].Value.ToString();
+                                        int trazenaVrijednostfPrethodnogRazdobljaInteger = int.Parse(trazenaVrijednostfPrethodnogRazdoblja);
+                                        int rezultat = cijenaNabave + cijenaSkladistenja + trazenaVrijednostfPrethodnogRazdobljaInteger;
+                                        listaRezultata.Add(rezultat);
+                                    }
+                                    break;
+                                }
+                            }
+                        }
+                        int f = listaRezultata.Min();
+                        int pozicija = listaRezultata.IndexOf(f);
+                        int nabavaQ = listaNabave[pozicija];
+
+                        dgvTablica1.Rows[brojRedaka].Cells[sljedeceRazdoblje * 2 + 2].Value = f;
+                        dgvTablica1.Rows[brojRedaka].Cells[sljedeceRazdoblje * 2 + 1].Value = nabavaQ;
+                        brojRedaka++;
+                    }
+                    brojRedaka = 0;
+                }
+                else
+                {
+                    return;
+                }
             }
         }
 

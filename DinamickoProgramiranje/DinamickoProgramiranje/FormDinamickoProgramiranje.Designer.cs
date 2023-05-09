@@ -183,7 +183,7 @@
             this.dgvTablica1.Name = "dgvTablica1";
             this.dgvTablica1.RowHeadersWidth = 51;
             this.dgvTablica1.RowTemplate.Height = 24;
-            this.dgvTablica1.Size = new System.Drawing.Size(1092, 369);
+            this.dgvTablica1.Size = new System.Drawing.Size(886, 369);
             this.dgvTablica1.TabIndex = 15;
             // 
             // btnIzracunaj
@@ -214,7 +214,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1575, 606);
+            this.ClientSize = new System.Drawing.Size(1374, 606);
             this.Controls.Add(this.btnNazad);
             this.Controls.Add(this.btnIzracunaj);
             this.Controls.Add(this.dgvTablica1);
