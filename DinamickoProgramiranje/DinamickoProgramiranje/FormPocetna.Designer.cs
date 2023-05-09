@@ -43,6 +43,7 @@
             this.btnDinamickoProgramiranje.TabIndex = 0;
             this.btnDinamickoProgramiranje.Text = "DINAMIČKO PROGRAMIRANJE";
             this.btnDinamickoProgramiranje.UseVisualStyleBackColor = false;
+            this.btnDinamickoProgramiranje.Click += new System.EventHandler(this.btnDinamickoProgramiranje_Click);
             // 
             // btnModelZaliha
             // 

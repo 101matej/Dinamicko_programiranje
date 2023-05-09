@@ -9,3 +9,4 @@ C:\Users\Matej\Documents\GitHub\Dinamicko_programiranje\DinamickoProgramiranje\D
 C:\Users\Matej\Documents\GitHub\Dinamicko_programiranje\DinamickoProgramiranje\DinamickoProgramiranje\obj\Debug\DinamickoProgramiranje.csproj.CoreCompileInputs.cache
 C:\Users\Matej\Documents\GitHub\Dinamicko_programiranje\DinamickoProgramiranje\DinamickoProgramiranje\obj\Debug\DinamickoProgramiranje.exe
 C:\Users\Matej\Documents\GitHub\Dinamicko_programiranje\DinamickoProgramiranje\DinamickoProgramiranje\obj\Debug\DinamickoProgramiranje.pdb
+C:\Users\Matej\Documents\GitHub\Dinamicko_programiranje\DinamickoProgramiranje\DinamickoProgramiranje\obj\Debug\DinamickoProgramiranje.FormDInamickoProgramiranje.resources

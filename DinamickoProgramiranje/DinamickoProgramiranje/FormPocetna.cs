@@ -16,5 +16,13 @@ namespace DinamickoProgramiranje
         {
             InitializeComponent();
         }
+
+        private void btnDinamickoProgramiranje_Click(object sender, EventArgs e)
+        {
+            FormDinamickoProgramiranje formDInamickoProgramiranje = new FormDinamickoProgramiranje();
+            this.Hide();
+            formDInamickoProgramiranje.ShowDialog();
+            this.Show();
+        }
     }
 }
