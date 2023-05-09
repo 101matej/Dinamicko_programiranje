@@ -24,3 +24,4 @@ C:\Users\Admin\Documents\GitHub\Dinamicko_programiranje\DinamickoProgramiranje\D
 C:\Users\Admin\Documents\GitHub\Dinamicko_programiranje\DinamickoProgramiranje\DinamickoProgramiranje\obj\Debug\DinamickoProgramiranje.FormZadatak1.resources
 C:\Users\Admin\Documents\GitHub\Dinamicko_programiranje\DinamickoProgramiranje\DinamickoProgramiranje\obj\Debug\DinamickoProgramiranje.FormZadatak2.resources
 C:\Users\Admin\Documents\GitHub\Dinamicko_programiranje\DinamickoProgramiranje\DinamickoProgramiranje\obj\Debug\DinamickoProgramiranje.FormZadatak3.resources
+C:\Users\Admin\Documents\GitHub\Dinamicko_programiranje\DinamickoProgramiranje\DinamickoProgramiranje\obj\Debug\DinamickoProgramiranje.FormZadatak4.resources

@@ -43,7 +43,10 @@ namespace DinamickoProgramiranje
 
         private void btnZad4_Click(object sender, EventArgs e)
         {
-
+            Form FormZadatak4 = new FormZadatak4();
+            this.Hide();
+            FormZadatak4.ShowDialog();
+            this.Show();
         }
 
         private void btnNazad_Click(object sender, EventArgs e)
