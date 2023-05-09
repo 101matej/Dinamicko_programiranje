@@ -70,6 +70,12 @@
     <Compile Include="FormZadatak2.Designer.cs">
       <DependentUpon>FormZadatak2.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormZadatak3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormZadatak3.Designer.cs">
+      <DependentUpon>FormZadatak3.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormModeliZaliha.resx">
@@ -83,6 +89,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormZadatak2.resx">
       <DependentUpon>FormZadatak2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormZadatak3.resx">
+      <DependentUpon>FormZadatak3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

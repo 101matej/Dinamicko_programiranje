@@ -1,6 +1,6 @@
 ﻿namespace DinamickoProgramiranje
 {
-    partial class FormZadatak2
+    partial class FormZadatak3
     {
         /// <summary>
         /// Required designer variable.
@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormZadatak2));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormZadatak3));
+            this.btnNazad = new System.Windows.Forms.Button();
             this.gbPojmovnik = new System.Windows.Forms.GroupBox();
             this.rtbPojmovnik = new System.Windows.Forms.RichTextBox();
-            this.btnNazad = new System.Windows.Forms.Button();
             this.gbIzracun = new System.Windows.Forms.GroupBox();
             this.brojC = new System.Windows.Forms.NumericUpDown();
             this.lbC = new System.Windows.Forms.Label();
@@ -53,6 +53,18 @@
             this.gbPostupak.SuspendLayout();
             this.SuspendLayout();
             // 
+            // btnNazad
+            // 
+            this.btnNazad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnNazad.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnNazad.Location = new System.Drawing.Point(626, 24);
+            this.btnNazad.Name = "btnNazad";
+            this.btnNazad.Size = new System.Drawing.Size(112, 59);
+            this.btnNazad.TabIndex = 8;
+            this.btnNazad.Text = "NAZAD";
+            this.btnNazad.UseVisualStyleBackColor = false;
+            this.btnNazad.Click += new System.EventHandler(this.btnNazad_Click);
+            // 
             // gbPojmovnik
             // 
             this.gbPojmovnik.Controls.Add(this.rtbPojmovnik);
@@ -60,7 +72,7 @@
             this.gbPojmovnik.Location = new System.Drawing.Point(12, 12);
             this.gbPojmovnik.Name = "gbPojmovnik";
             this.gbPojmovnik.Size = new System.Drawing.Size(592, 154);
-            this.gbPojmovnik.TabIndex = 2;
+            this.gbPojmovnik.TabIndex = 9;
             this.gbPojmovnik.TabStop = false;
             this.gbPojmovnik.Text = "Pojmovnik:";
             // 
@@ -74,18 +86,6 @@
             this.rtbPojmovnik.Size = new System.Drawing.Size(573, 110);
             this.rtbPojmovnik.TabIndex = 1;
             this.rtbPojmovnik.Text = resources.GetString("rtbPojmovnik.Text");
-            // 
-            // btnNazad
-            // 
-            this.btnNazad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnNazad.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnNazad.Location = new System.Drawing.Point(626, 24);
-            this.btnNazad.Name = "btnNazad";
-            this.btnNazad.Size = new System.Drawing.Size(112, 59);
-            this.btnNazad.TabIndex = 7;
-            this.btnNazad.Text = "NAZAD";
-            this.btnNazad.UseVisualStyleBackColor = false;
-            this.btnNazad.Click += new System.EventHandler(this.btnNazad_Click);
             // 
             // gbIzracun
             // 
@@ -102,7 +102,7 @@
             this.gbIzracun.Location = new System.Drawing.Point(12, 172);
             this.gbIzracun.Name = "gbIzracun";
             this.gbIzracun.Size = new System.Drawing.Size(592, 206);
-            this.gbIzracun.TabIndex = 10;
+            this.gbIzracun.TabIndex = 11;
             this.gbIzracun.TabStop = false;
             this.gbIzracun.Text = "Izračun:";
             // 
@@ -193,7 +193,7 @@
             this.gbPostupak.Location = new System.Drawing.Point(12, 384);
             this.gbPostupak.Name = "gbPostupak";
             this.gbPostupak.Size = new System.Drawing.Size(592, 199);
-            this.gbPostupak.TabIndex = 16;
+            this.gbPostupak.TabIndex = 17;
             this.gbPostupak.TabStop = false;
             this.gbPostupak.Text = "Postupak:";
             // 
@@ -208,18 +208,18 @@
             this.rtbPostupak.TabIndex = 2;
             this.rtbPostupak.Text = "";
             // 
-            // FormZadatak2
+            // FormZadatak3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(760, 595);
             this.Controls.Add(this.gbPostupak);
             this.Controls.Add(this.gbIzracun);
-            this.Controls.Add(this.btnNazad);
             this.Controls.Add(this.gbPojmovnik);
-            this.Name = "FormZadatak2";
+            this.Controls.Add(this.btnNazad);
+            this.Name = "FormZadatak3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Optimalni broj jedinica po jednoj narudžbi";
+            this.Text = "Optimalni broj dana opskrbljivanja";
             this.gbPojmovnik.ResumeLayout(false);
             this.gbIzracun.ResumeLayout(false);
             this.gbIzracun.PerformLayout();
@@ -234,9 +234,9 @@
 
         #endregion
 
+        private System.Windows.Forms.Button btnNazad;
         private System.Windows.Forms.GroupBox gbPojmovnik;
         private System.Windows.Forms.RichTextBox rtbPojmovnik;
-        private System.Windows.Forms.Button btnNazad;
         private System.Windows.Forms.GroupBox gbIzracun;
         private System.Windows.Forms.NumericUpDown brojC;
         private System.Windows.Forms.Label lbC;
