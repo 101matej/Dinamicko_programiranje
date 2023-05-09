@@ -21,3 +21,4 @@ C:\Users\Admin\Documents\GitHub\Dinamicko_programiranje\DinamickoProgramiranje\D
 C:\Users\Admin\Documents\GitHub\Dinamicko_programiranje\DinamickoProgramiranje\DinamickoProgramiranje\obj\Debug\DinamickoProgramiranje.csproj.CoreCompileInputs.cache
 C:\Users\Admin\Documents\GitHub\Dinamicko_programiranje\DinamickoProgramiranje\DinamickoProgramiranje\obj\Debug\DinamickoProgramiranje.exe
 C:\Users\Admin\Documents\GitHub\Dinamicko_programiranje\DinamickoProgramiranje\DinamickoProgramiranje\obj\Debug\DinamickoProgramiranje.pdb
+C:\Users\Admin\Documents\GitHub\Dinamicko_programiranje\DinamickoProgramiranje\DinamickoProgramiranje\obj\Debug\DinamickoProgramiranje.FormZadatak1.resources

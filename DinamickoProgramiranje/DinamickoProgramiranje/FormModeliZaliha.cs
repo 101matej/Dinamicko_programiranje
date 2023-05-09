@@ -19,7 +19,10 @@ namespace DinamickoProgramiranje
 
         private void btnZad1_Click(object sender, EventArgs e)
         {
-
+            Form FormZadatak1 = new FormZadatak1();
+            this.Hide();
+            FormZadatak1.ShowDialog();
+            this.Show();
         }
 
         private void btnZad2_Click(object sender, EventArgs e)
@@ -35,6 +38,11 @@ namespace DinamickoProgramiranje
         private void btnZad4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnNazad_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

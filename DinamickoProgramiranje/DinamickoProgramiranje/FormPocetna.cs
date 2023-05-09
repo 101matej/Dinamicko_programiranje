@@ -19,8 +19,10 @@ namespace DinamickoProgramiranje
 
         private void btnModelZaliha_Click(object sender, EventArgs e)
         {
-            Form ModeliZaliha = new FormModeliZaliha();
-            ModeliZaliha.ShowDialog();
+            Form FormModeliZaliha = new FormModeliZaliha();
+            this.Hide();
+            FormModeliZaliha.ShowDialog();
+            this.Show();
         }
     }
 }

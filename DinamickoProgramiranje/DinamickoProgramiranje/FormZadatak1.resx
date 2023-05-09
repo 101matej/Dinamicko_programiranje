@@ -117,4 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="rtbPojmovnik.Text" xml:space="preserve">
+    <value>N - optimalni broj narudžbi u jednoj godini kojim se minimiziraju ukupni troškovi zaliha
+A - ukupna vrijednost materijala potrebnog u jednoj godini
+P - troškovi po jednoj narudžbi
+C - troškovi uskladištenja izraženi u postotku od prosječne vrijednosti zaliha</value>
+  </data>
 </root>
