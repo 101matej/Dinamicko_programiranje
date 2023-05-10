@@ -33,6 +33,8 @@
             this.gbPojmovnik = new System.Windows.Forms.GroupBox();
             this.rtbPojmovnik = new System.Windows.Forms.RichTextBox();
             this.gbIzracun = new System.Windows.Forms.GroupBox();
+            this.brojMinimalno = new System.Windows.Forms.NumericUpDown();
+            this.lbMinimalno = new System.Windows.Forms.Label();
             this.brojRabat = new System.Windows.Forms.NumericUpDown();
             this.lbRabat = new System.Windows.Forms.Label();
             this.brojC = new System.Windows.Forms.NumericUpDown();
@@ -48,10 +50,9 @@
             this.rtbPostupakBezRabata = new System.Windows.Forms.RichTextBox();
             this.gbPostupakSRabatom = new System.Windows.Forms.GroupBox();
             this.rtbPostupakSRabatom = new System.Windows.Forms.RichTextBox();
-            this.brojMinimalno = new System.Windows.Forms.NumericUpDown();
-            this.lbMinimalno = new System.Windows.Forms.Label();
             this.gbPojmovnik.SuspendLayout();
             this.gbIzracun.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.brojMinimalno)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.brojRabat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.brojC)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.brojP)).BeginInit();
@@ -59,7 +60,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.brojR)).BeginInit();
             this.gbPostupakBezRabata.SuspendLayout();
             this.gbPostupakSRabatom.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.brojMinimalno)).BeginInit();
             this.SuspendLayout();
             // 
             // btnNazad
@@ -118,6 +118,23 @@
             this.gbIzracun.TabIndex = 12;
             this.gbIzracun.TabStop = false;
             this.gbIzracun.Text = "Izračun:";
+            // 
+            // brojMinimalno
+            // 
+            this.brojMinimalno.Location = new System.Drawing.Point(398, 77);
+            this.brojMinimalno.Name = "brojMinimalno";
+            this.brojMinimalno.Size = new System.Drawing.Size(135, 31);
+            this.brojMinimalno.TabIndex = 25;
+            // 
+            // lbMinimalno
+            // 
+            this.lbMinimalno.AutoSize = true;
+            this.lbMinimalno.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lbMinimalno.Location = new System.Drawing.Point(289, 85);
+            this.lbMinimalno.Name = "lbMinimalno";
+            this.lbMinimalno.Size = new System.Drawing.Size(80, 16);
+            this.lbMinimalno.TabIndex = 24;
+            this.lbMinimalno.Text = "Unesite Min:";
             // 
             // brojRabat
             // 
@@ -260,23 +277,6 @@
             this.rtbPostupakSRabatom.TabIndex = 2;
             this.rtbPostupakSRabatom.Text = "";
             // 
-            // brojMinimalno
-            // 
-            this.brojMinimalno.Location = new System.Drawing.Point(398, 77);
-            this.brojMinimalno.Name = "brojMinimalno";
-            this.brojMinimalno.Size = new System.Drawing.Size(135, 31);
-            this.brojMinimalno.TabIndex = 25;
-            // 
-            // lbMinimalno
-            // 
-            this.lbMinimalno.AutoSize = true;
-            this.lbMinimalno.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lbMinimalno.Location = new System.Drawing.Point(289, 85);
-            this.lbMinimalno.Name = "lbMinimalno";
-            this.lbMinimalno.Size = new System.Drawing.Size(80, 16);
-            this.lbMinimalno.TabIndex = 24;
-            this.lbMinimalno.Text = "Unesite Min:";
-            // 
             // FormZadatak4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -290,9 +290,12 @@
             this.Name = "FormZadatak4";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Metoda usporedbe ukupnih troškova ponude";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.FormZadatak4_Load);
             this.gbPojmovnik.ResumeLayout(false);
             this.gbIzracun.ResumeLayout(false);
             this.gbIzracun.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.brojMinimalno)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.brojRabat)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.brojC)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.brojP)).EndInit();
@@ -300,7 +303,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.brojR)).EndInit();
             this.gbPostupakBezRabata.ResumeLayout(false);
             this.gbPostupakSRabatom.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.brojMinimalno)).EndInit();
             this.ResumeLayout(false);
 
         }

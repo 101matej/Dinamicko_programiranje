@@ -14,6 +14,18 @@ namespace DinamickoProgramiranje
     {
         double numC, numRabat, numQ, numGTS, numARabat, numIPJNRabat, numGTSRabat;
         int numM, numP, numR, numQZaokruzeno, numUkupnoSRabatom, numA, numARabatZaokruzeno, numGTN, numGTNRabat, numIPJN, numIPJNRabatZaokruzeno, numSZUKO, numGTSZaokruzeno, numUkupnoBezRabata, numMinimalno, numPVZRabat, numGTSRabatZaokruzeno;
+        bool tablicaPostoji = false;
+
+        private void FormZadatak4_Load(object sender, EventArgs e)
+        {
+            this.AutoSize = true;
+            this.AutoSizeMode = AutoSizeMode.GrowOnly;
+            nacrtajTablicu();
+            gbTablica.Hide();
+        }
+
+        public DataGridView tablica;
+        public GroupBox gbTablica;
 
         public FormZadatak4()
         {
@@ -49,6 +61,25 @@ namespace DinamickoProgramiranje
             izracunaj();
             gbPostupakBezRabata.Show();
             gbPostupakSRabatom.Show();
+
+            foreach (var kontrola in this.Controls)
+            {
+                if (kontrola.GetType() == typeof(GroupBox))
+                {
+                    GroupBox trenutniGroupBox = kontrola as GroupBox;
+                    if (trenutniGroupBox.Text == "Usporedba:")
+                    {
+                        tablicaPostoji = true;
+                        break;
+                    }
+                }
+            }
+
+            if (tablicaPostoji == true)
+            {
+                popuniTablicu();
+                gbTablica.Show();
+            }
         }
 
         private void spremiVrijednosti()
@@ -180,6 +211,69 @@ namespace DinamickoProgramiranje
             rtbPostupakSRabatom.SelectionLength = numUkupnoSRabatom.ToString().Length;
             rtbPostupakSRabatom.SelectionFont = new Font(rtbPostupakSRabatom.Font, FontStyle.Bold);
             rtbPostupakSRabatom.AppendText($"{numUkupnoSRabatom}\n\n");
+        }
+
+        private void nacrtajTablicu()
+        {
+            gbTablica = new GroupBox();
+            gbTablica.Text = "Usporedba:";
+            Font font = new Font("Comic Sans MS", 10.2f, FontStyle.Bold);
+            gbTablica.Font = font;
+            gbTablica.Location = new Point(473, 99);
+            gbTablica.AutoSize = true;
+
+            Panel panel = new Panel();
+            panel.Location = new Point(20, 20);
+            panel.Size = new Size(575,125);
+
+            tablica = new DataGridView(); 
+            tablica.ColumnCount = 3;
+            tablica.RowCount = 5;
+            tablica.Font = new Font("Microsoft Sans Serif", 7.8f, FontStyle.Regular);
+  
+            tablica.Columns[1].HeaderText = "IZNOS BEZ RABATA";
+            tablica.Columns[2].HeaderText = "IZNOS S RABATOM";
+            tablica.Rows[0].Cells[0].Value = "Optimalna količina";
+            tablica.Rows[1].Cells[0].Value = "Ukupna vrijednost materijala potrebnog u jednoj godini";
+            tablica.Rows[2].Cells[0].Value = "Godišnji troškovi narudžbe";
+            tablica.Rows[3].Cells[0].Value = "Godišnji troškovi skladištenja";
+            tablica.Rows[4].Cells[0].Value = "Ukupni godišnji troškovi materijala";
+
+            tablica.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            tablica.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            tablica.Dock = DockStyle.Fill;
+    
+            panel.Controls.Add(tablica);
+            gbTablica.Controls.Add(panel);
+            this.Controls.Add(gbTablica);
+        }
+
+        private void popuniTablicu()
+        {
+            tablica.Rows[0].Cells[1].Value = numQZaokruzeno;
+            tablica.Rows[0].Cells[2].Value = brojMinimalno.Value;
+            tablica.Rows[1].Cells[1].Value = numA;
+            tablica.Rows[1].Cells[2].Value = numARabatZaokruzeno;
+            tablica.Rows[2].Cells[1].Value = numGTN;
+            tablica.Rows[2].Cells[2].Value = numGTNRabat;
+            tablica.Rows[3].Cells[1].Value = numGTSZaokruzeno;
+            tablica.Rows[3].Cells[2].Value = numGTSRabatZaokruzeno;
+            tablica.Rows[4].Cells[1].Value = numUkupnoBezRabata;
+            tablica.Rows[4].Cells[2].Value = numUkupnoSRabatom;
+
+            if (numUkupnoBezRabata < numUkupnoSRabatom)
+            {
+                tablica.Columns[1].DefaultCellStyle.BackColor = Color.LightGreen;
+                tablica.Columns[2].DefaultCellStyle.BackColor = Color.LightCoral;
+            }
+            else
+            {
+                tablica.Columns[1].DefaultCellStyle.BackColor = Color.LightCoral;
+                tablica.Columns[2].DefaultCellStyle.BackColor = Color.LightGreen;
+            }
+
+            tablica.Rows[4].Cells[1].Style.Font = new Font(tablica.Font, FontStyle.Bold);
+            tablica.Rows[4].Cells[2].Style.Font = new Font(tablica.Font, FontStyle.Bold);
         }
     }
 }
