@@ -41,15 +41,7 @@ namespace DinamickoProgramiranje
             brojP.Maximum = int.MaxValue;
             brojR.Maximum = int.MaxValue;
             brojRabat.Maximum = int.MaxValue;
-            brojMinimalno.Maximum = int.MaxValue;   
-
-            //obrisati kasnije
-            brojM.Value = 100000;
-            brojR.Value = 40;
-            brojP.Value = 200;
-            brojC.Value = 25;
-            brojRabat.Value = 2;
-            brojMinimalno.Value = 10000;
+            brojMinimalno.Maximum = int.MaxValue;
         }
 
         private void btnNazad_Click(object sender, EventArgs e)
