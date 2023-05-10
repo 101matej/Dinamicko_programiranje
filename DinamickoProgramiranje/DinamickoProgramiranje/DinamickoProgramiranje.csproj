@@ -52,19 +52,64 @@
     <Compile Include="FormDinamickoProgramiranje.Designer.cs">
       <DependentUpon>FormDinamickoProgramiranje.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormModeliZaliha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormModeliZaliha.Designer.cs">
+      <DependentUpon>FormModeliZaliha.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormPocetna.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormPocetna.Designer.cs">
       <DependentUpon>FormPocetna.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormZadatak1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormZadatak1.Designer.cs">
+      <DependentUpon>FormZadatak1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormZadatak2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormZadatak2.Designer.cs">
+      <DependentUpon>FormZadatak2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormZadatak3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormZadatak3.Designer.cs">
+      <DependentUpon>FormZadatak3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormZadatak4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormZadatak4.Designer.cs">
+      <DependentUpon>FormZadatak4.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormDinamickoProgramiranje.resx">
       <DependentUpon>FormDinamickoProgramiranje.cs</DependentUpon>
+      </EmbeddedResource>
+    <EmbeddedResource Include="FormModeliZaliha.resx">
+      <DependentUpon>FormModeliZaliha.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPocetna.resx">
       <DependentUpon>FormPocetna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormZadatak1.resx">
+      <DependentUpon>FormZadatak1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormZadatak2.resx">
+      <DependentUpon>FormZadatak2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormZadatak3.resx">
+      <DependentUpon>FormZadatak3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormZadatak4.resx">
+      <DependentUpon>FormZadatak4.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

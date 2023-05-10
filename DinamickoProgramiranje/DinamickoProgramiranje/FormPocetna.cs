@@ -17,11 +17,19 @@ namespace DinamickoProgramiranje
             InitializeComponent();
         }
 
+
         private void btnDinamickoProgramiranje_Click(object sender, EventArgs e)
         {
             FormDinamickoProgramiranje formDInamickoProgramiranje = new FormDinamickoProgramiranje();
             this.Hide();
             formDInamickoProgramiranje.ShowDialog();
+        }
+        
+        private void btnModelZaliha_Click(object sender, EventArgs e)
+        {
+            Form FormModeliZaliha = new FormModeliZaliha();
+            this.Hide();
+            FormModeliZaliha.ShowDialog();
             this.Show();
         }
     }
