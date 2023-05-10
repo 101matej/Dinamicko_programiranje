@@ -23,6 +23,7 @@ namespace DinamickoProgramiranje
             FormDinamickoProgramiranje formDInamickoProgramiranje = new FormDinamickoProgramiranje();
             this.Hide();
             formDInamickoProgramiranje.ShowDialog();
+            this.Show();
         }
         
         private void btnModelZaliha_Click(object sender, EventArgs e)
