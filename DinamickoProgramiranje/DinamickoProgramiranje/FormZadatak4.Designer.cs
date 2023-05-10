@@ -80,7 +80,7 @@
             this.gbPojmovnik.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.gbPojmovnik.Location = new System.Drawing.Point(47, 37);
             this.gbPojmovnik.Name = "gbPojmovnik";
-            this.gbPojmovnik.Size = new System.Drawing.Size(813, 221);
+            this.gbPojmovnik.Size = new System.Drawing.Size(803, 221);
             this.gbPojmovnik.TabIndex = 10;
             this.gbPojmovnik.TabStop = false;
             this.gbPojmovnik.Text = "Pojmovnik:";
@@ -92,7 +92,7 @@
             this.rtbPojmovnik.Location = new System.Drawing.Point(12, 39);
             this.rtbPojmovnik.Name = "rtbPojmovnik";
             this.rtbPojmovnik.ReadOnly = true;
-            this.rtbPojmovnik.Size = new System.Drawing.Size(784, 166);
+            this.rtbPojmovnik.Size = new System.Drawing.Size(773, 166);
             this.rtbPojmovnik.TabIndex = 1;
             this.rtbPojmovnik.Text = resources.GetString("rtbPojmovnik.Text");
             // 
@@ -114,7 +114,7 @@
             this.gbIzracun.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.gbIzracun.Location = new System.Drawing.Point(47, 280);
             this.gbIzracun.Name = "gbIzracun";
-            this.gbIzracun.Size = new System.Drawing.Size(813, 281);
+            this.gbIzracun.Size = new System.Drawing.Size(803, 281);
             this.gbIzracun.TabIndex = 12;
             this.gbIzracun.TabStop = false;
             this.gbIzracun.Text = "Izračun:";
@@ -205,7 +205,7 @@
             // 
             this.btnIzracunaj.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnIzracunaj.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnIzracunaj.Location = new System.Drawing.Point(467, 163);
+            this.btnIzracunaj.Location = new System.Drawing.Point(460, 163);
             this.btnIzracunaj.Name = "btnIzracunaj";
             this.btnIzracunaj.Size = new System.Drawing.Size(235, 75);
             this.btnIzracunaj.TabIndex = 10;
@@ -239,7 +239,7 @@
             this.gbPostupakBezRabata.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.gbPostupakBezRabata.Location = new System.Drawing.Point(911, 37);
             this.gbPostupakBezRabata.Name = "gbPostupakBezRabata";
-            this.gbPostupakBezRabata.Size = new System.Drawing.Size(504, 221);
+            this.gbPostupakBezRabata.Size = new System.Drawing.Size(504, 524);
             this.gbPostupakBezRabata.TabIndex = 18;
             this.gbPostupakBezRabata.TabStop = false;
             this.gbPostupakBezRabata.Text = "Postupak bez rabata:";
@@ -251,7 +251,7 @@
             this.rtbPostupakBezRabata.Location = new System.Drawing.Point(15, 34);
             this.rtbPostupakBezRabata.Name = "rtbPostupakBezRabata";
             this.rtbPostupakBezRabata.ReadOnly = true;
-            this.rtbPostupakBezRabata.Size = new System.Drawing.Size(469, 171);
+            this.rtbPostupakBezRabata.Size = new System.Drawing.Size(469, 471);
             this.rtbPostupakBezRabata.TabIndex = 2;
             this.rtbPostupakBezRabata.Text = "";
             // 
@@ -261,7 +261,7 @@
             this.gbPostupakSRabatom.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.gbPostupakSRabatom.Location = new System.Drawing.Point(1470, 37);
             this.gbPostupakSRabatom.Name = "gbPostupakSRabatom";
-            this.gbPostupakSRabatom.Size = new System.Drawing.Size(504, 221);
+            this.gbPostupakSRabatom.Size = new System.Drawing.Size(504, 524);
             this.gbPostupakSRabatom.TabIndex = 19;
             this.gbPostupakSRabatom.TabStop = false;
             this.gbPostupakSRabatom.Text = "Postupak s rabatom:";
@@ -273,7 +273,7 @@
             this.rtbPostupakSRabatom.Location = new System.Drawing.Point(13, 39);
             this.rtbPostupakSRabatom.Name = "rtbPostupakSRabatom";
             this.rtbPostupakSRabatom.ReadOnly = true;
-            this.rtbPostupakSRabatom.Size = new System.Drawing.Size(471, 166);
+            this.rtbPostupakSRabatom.Size = new System.Drawing.Size(471, 466);
             this.rtbPostupakSRabatom.TabIndex = 2;
             this.rtbPostupakSRabatom.Text = "";
             // 

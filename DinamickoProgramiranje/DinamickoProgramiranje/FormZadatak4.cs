@@ -25,7 +25,7 @@ namespace DinamickoProgramiranje
 
             Button btnNazadC = btnNazad;
             btnNazadC.Anchor = AnchorStyles.None;
-            btnNazadC.Location = new Point(((this.ClientSize.Width - btnNazadC.Width) / 2), 660);
+            btnNazadC.Location = new Point(((this.ClientSize.Width - btnNazadC.Width) / 2), 700);
         }
 
         public DataGridView tablica;
@@ -223,17 +223,17 @@ namespace DinamickoProgramiranje
             gbTablica.Text = "Usporedba:";
             Font font = new Font("Comic Sans MS", 13.8f, FontStyle.Bold);
             gbTablica.Font = font;
-            gbTablica.Location = new Point(683, 228);
+            gbTablica.Location = new Point(35, 475);
             gbTablica.AutoSize = true;
 
             Panel panel = new Panel();
             panel.Location = new Point(20, 40);
-            panel.Size = new Size(575,135);
+            panel.Size = new Size(747,135);
 
             tablica = new DataGridView(); 
             tablica.ColumnCount = 3;
             tablica.RowCount = 5;
-            tablica.Font = new Font("Microsoft Sans Serif", 7.8f, FontStyle.Regular);
+            tablica.Font = new Font("Microsoft Sans Serif", 10.8f, FontStyle.Regular);
   
             tablica.Columns[1].HeaderText = "IZNOS BEZ RABATA";
             tablica.Columns[2].HeaderText = "IZNOS S RABATOM";
