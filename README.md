@@ -1,2 +1,2 @@
-# Dinamicko_programiranje
-U projektu će biti izrađena Windows forms aplikacija koja rješava problem dinamičkog programiranja.
+# Dinamičko programiranje i modeli zaliha
+U projektu će biti izrađena Windows forms aplikacija koja rješava problem dinamičkog programiranja i modela zaliha.
