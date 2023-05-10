@@ -232,7 +232,17 @@ namespace DinamickoProgramiranje
                                 }
                             }
                         }
-                        int f = listaRezultata.Min();
+                        int f = 0;
+                        if(listaRezultata.Count == 0)
+                        {
+                            MessageBox.Show("Neispravno uneseni ulazni parametri!");
+                            return;
+                        }
+                        else
+                        {
+                            f = listaRezultata.Min();
+                        }
+                        
                         int pozicija = listaRezultata.IndexOf(f);
                         int nabavaQ = listaNabave[pozicija];
 
@@ -416,6 +426,7 @@ namespace DinamickoProgramiranje
             dgvTablica2.Rows[brojRazdoblja].Cells[5].Style.BackColor = Color.LightCoral;
             dgvTablica2.Rows[brojRazdoblja].Cells[6].Style.BackColor = Color.LightCoral;
 
+            rtbRjesenje.Clear();
             rtbRjesenje.AppendText("Cijena optimalne količine naručivanja i skladištenja iznosi: " + ukupno + ".");
         }
 
