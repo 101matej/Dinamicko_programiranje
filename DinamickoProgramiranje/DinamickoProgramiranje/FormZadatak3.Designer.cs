@@ -56,10 +56,10 @@
             // btnNazad
             // 
             this.btnNazad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnNazad.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnNazad.Location = new System.Drawing.Point(626, 24);
+            this.btnNazad.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnNazad.Location = new System.Drawing.Point(941, 562);
             this.btnNazad.Name = "btnNazad";
-            this.btnNazad.Size = new System.Drawing.Size(112, 59);
+            this.btnNazad.Size = new System.Drawing.Size(189, 74);
             this.btnNazad.TabIndex = 8;
             this.btnNazad.Text = "NAZAD";
             this.btnNazad.UseVisualStyleBackColor = false;
@@ -68,10 +68,10 @@
             // gbPojmovnik
             // 
             this.gbPojmovnik.Controls.Add(this.rtbPojmovnik);
-            this.gbPojmovnik.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.gbPojmovnik.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.gbPojmovnik.Location = new System.Drawing.Point(12, 12);
             this.gbPojmovnik.Name = "gbPojmovnik";
-            this.gbPojmovnik.Size = new System.Drawing.Size(592, 154);
+            this.gbPojmovnik.Size = new System.Drawing.Size(721, 202);
             this.gbPojmovnik.TabIndex = 9;
             this.gbPojmovnik.TabStop = false;
             this.gbPojmovnik.Text = "Pojmovnik:";
@@ -79,11 +79,11 @@
             // rtbPojmovnik
             // 
             this.rtbPojmovnik.BackColor = System.Drawing.SystemColors.Info;
-            this.rtbPojmovnik.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.rtbPojmovnik.Location = new System.Drawing.Point(6, 30);
+            this.rtbPojmovnik.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.rtbPojmovnik.Location = new System.Drawing.Point(13, 39);
             this.rtbPojmovnik.Name = "rtbPojmovnik";
             this.rtbPojmovnik.ReadOnly = true;
-            this.rtbPojmovnik.Size = new System.Drawing.Size(573, 110);
+            this.rtbPojmovnik.Size = new System.Drawing.Size(685, 145);
             this.rtbPojmovnik.TabIndex = 1;
             this.rtbPojmovnik.Text = resources.GetString("rtbPojmovnik.Text");
             // 
@@ -98,69 +98,69 @@
             this.gbIzracun.Controls.Add(this.btnIzracunaj);
             this.gbIzracun.Controls.Add(this.lbP);
             this.gbIzracun.Controls.Add(this.lbR);
-            this.gbIzracun.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbIzracun.Location = new System.Drawing.Point(12, 172);
+            this.gbIzracun.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.gbIzracun.Location = new System.Drawing.Point(12, 230);
             this.gbIzracun.Name = "gbIzracun";
-            this.gbIzracun.Size = new System.Drawing.Size(592, 206);
+            this.gbIzracun.Size = new System.Drawing.Size(721, 303);
             this.gbIzracun.TabIndex = 11;
             this.gbIzracun.TabStop = false;
             this.gbIzracun.Text = "Izračun:";
             // 
             // brojC
             // 
-            this.brojC.Location = new System.Drawing.Point(111, 152);
+            this.brojC.Location = new System.Drawing.Point(152, 217);
             this.brojC.Name = "brojC";
-            this.brojC.Size = new System.Drawing.Size(135, 31);
+            this.brojC.Size = new System.Drawing.Size(169, 40);
             this.brojC.TabIndex = 21;
             // 
             // lbC
             // 
             this.lbC.AutoSize = true;
-            this.lbC.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lbC.Location = new System.Drawing.Point(27, 160);
+            this.lbC.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lbC.Location = new System.Drawing.Point(27, 227);
             this.lbC.Name = "lbC";
-            this.lbC.Size = new System.Drawing.Size(68, 16);
+            this.lbC.Size = new System.Drawing.Size(94, 22);
             this.lbC.TabIndex = 20;
             this.lbC.Text = "Unesite C:";
             // 
             // brojP
             // 
-            this.brojP.Location = new System.Drawing.Point(111, 77);
+            this.brojP.Location = new System.Drawing.Point(152, 101);
             this.brojP.Name = "brojP";
-            this.brojP.Size = new System.Drawing.Size(135, 31);
+            this.brojP.Size = new System.Drawing.Size(169, 40);
             this.brojP.TabIndex = 19;
             // 
             // brojM
             // 
-            this.brojM.Location = new System.Drawing.Point(111, 40);
+            this.brojM.Location = new System.Drawing.Point(152, 39);
             this.brojM.Name = "brojM";
-            this.brojM.Size = new System.Drawing.Size(135, 31);
+            this.brojM.Size = new System.Drawing.Size(169, 40);
             this.brojM.TabIndex = 18;
             // 
             // lbM
             // 
             this.lbM.AutoSize = true;
-            this.lbM.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lbM.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lbM.Location = new System.Drawing.Point(27, 48);
             this.lbM.Name = "lbM";
-            this.lbM.Size = new System.Drawing.Size(70, 16);
+            this.lbM.Size = new System.Drawing.Size(119, 28);
             this.lbM.TabIndex = 12;
             this.lbM.Text = "Unesite M:";
             // 
             // brojR
             // 
-            this.brojR.Location = new System.Drawing.Point(111, 114);
+            this.brojR.Location = new System.Drawing.Point(152, 159);
             this.brojR.Name = "brojR";
-            this.brojR.Size = new System.Drawing.Size(135, 31);
+            this.brojR.Size = new System.Drawing.Size(169, 40);
             this.brojR.TabIndex = 17;
             // 
             // btnIzracunaj
             // 
             this.btnIzracunaj.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnIzracunaj.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnIzracunaj.Location = new System.Drawing.Point(352, 83);
+            this.btnIzracunaj.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnIzracunaj.Location = new System.Drawing.Point(426, 116);
             this.btnIzracunaj.Name = "btnIzracunaj";
-            this.btnIzracunaj.Size = new System.Drawing.Size(150, 59);
+            this.btnIzracunaj.Size = new System.Drawing.Size(189, 74);
             this.btnIzracunaj.TabIndex = 10;
             this.btnIzracunaj.Text = "IZRAČUNAJ";
             this.btnIzracunaj.UseVisualStyleBackColor = false;
@@ -169,30 +169,30 @@
             // lbP
             // 
             this.lbP.AutoSize = true;
-            this.lbP.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lbP.Location = new System.Drawing.Point(27, 85);
+            this.lbP.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lbP.Location = new System.Drawing.Point(27, 110);
             this.lbP.Name = "lbP";
-            this.lbP.Size = new System.Drawing.Size(68, 16);
+            this.lbP.Size = new System.Drawing.Size(93, 22);
             this.lbP.TabIndex = 14;
             this.lbP.Text = "Unesite P:";
             // 
             // lbR
             // 
             this.lbR.AutoSize = true;
-            this.lbR.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lbR.Location = new System.Drawing.Point(27, 122);
+            this.lbR.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lbR.Location = new System.Drawing.Point(27, 168);
             this.lbR.Name = "lbR";
-            this.lbR.Size = new System.Drawing.Size(69, 16);
+            this.lbR.Size = new System.Drawing.Size(94, 22);
             this.lbR.TabIndex = 10;
             this.lbR.Text = "Unesite R:";
             // 
             // gbPostupak
             // 
             this.gbPostupak.Controls.Add(this.rtbPostupak);
-            this.gbPostupak.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbPostupak.Location = new System.Drawing.Point(12, 384);
+            this.gbPostupak.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.gbPostupak.Location = new System.Drawing.Point(12, 560);
             this.gbPostupak.Name = "gbPostupak";
-            this.gbPostupak.Size = new System.Drawing.Size(592, 199);
+            this.gbPostupak.Size = new System.Drawing.Size(721, 206);
             this.gbPostupak.TabIndex = 17;
             this.gbPostupak.TabStop = false;
             this.gbPostupak.Text = "Postupak:";
@@ -201,10 +201,10 @@
             // 
             this.rtbPostupak.BackColor = System.Drawing.SystemColors.Info;
             this.rtbPostupak.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.rtbPostupak.Location = new System.Drawing.Point(13, 30);
+            this.rtbPostupak.Location = new System.Drawing.Point(13, 39);
             this.rtbPostupak.Name = "rtbPostupak";
             this.rtbPostupak.ReadOnly = true;
-            this.rtbPostupak.Size = new System.Drawing.Size(566, 145);
+            this.rtbPostupak.Size = new System.Drawing.Size(692, 144);
             this.rtbPostupak.TabIndex = 2;
             this.rtbPostupak.Text = "";
             // 
@@ -212,7 +212,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(760, 595);
+            this.ClientSize = new System.Drawing.Size(1810, 922);
             this.Controls.Add(this.gbPostupak);
             this.Controls.Add(this.gbIzracun);
             this.Controls.Add(this.gbPojmovnik);
@@ -220,6 +220,8 @@
             this.Name = "FormZadatak3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Optimalni broj dana opskrbljivanja";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.FormZadatak3_Load);
             this.gbPojmovnik.ResumeLayout(false);
             this.gbIzracun.ResumeLayout(false);
             this.gbIzracun.PerformLayout();

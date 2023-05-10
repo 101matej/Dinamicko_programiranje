@@ -26,6 +26,25 @@ namespace DinamickoProgramiranje
             brojR.Maximum = int.MaxValue;
         }
 
+        private void FormZadatak3_Load(object sender, EventArgs e)
+        {
+            GroupBox gbCP = gbPojmovnik;
+            gbCP.Anchor = AnchorStyles.None;
+            gbCP.Location = new Point((this.ClientSize.Width - gbCP.Width) / 2, 30);
+
+            GroupBox gbCI = gbIzracun;
+            gbCI.Anchor = AnchorStyles.None;
+            gbCI.Location = new Point((this.ClientSize.Width - gbCI.Width) / 2, gbCP.Height + 50);
+
+            GroupBox gbP = gbPostupak;
+            gbP.Anchor = AnchorStyles.None;
+            gbP.Location = new Point((this.ClientSize.Width - gbP.Width) / 2, 2 * gbCP.Height + 155);
+
+            Button btnNazadC = btnNazad;
+            btnNazadC.Anchor = AnchorStyles.None;
+            btnNazadC.Location = new Point(((this.ClientSize.Width - btnNazadC.Width) / 2), (2 * gbCI.Height + 200));
+        }
+
         private void btnNazad_Click(object sender, EventArgs e)
         {
             this.Close();

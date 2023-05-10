@@ -53,5 +53,15 @@ namespace DinamickoProgramiranje
         {
             this.Close();
         }
+
+        private void FormModeliZaliha_Load(object sender, EventArgs e)
+        {
+            GroupBox gbModeliZaliha = gbZadaci;
+            Button button = btnNazad;
+            gbModeliZaliha.Anchor = AnchorStyles.None;
+            button.Anchor = AnchorStyles.None;
+            gbModeliZaliha.Location = new Point((this.ClientSize.Width - gbModeliZaliha.Width) / 2, (this.ClientSize.Height - gbModeliZaliha.Height) / 2 - 100);
+            button.Location = new Point(((this.ClientSize.Width - button.Width) / 2), ((this.ClientSize.Height - gbModeliZaliha.Height) / 2) + 400);
+        }
     }
 }

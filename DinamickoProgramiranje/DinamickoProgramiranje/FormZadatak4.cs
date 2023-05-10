@@ -22,6 +22,10 @@ namespace DinamickoProgramiranje
             this.AutoSizeMode = AutoSizeMode.GrowOnly;
             nacrtajTablicu();
             gbTablica.Hide();
+
+            Button btnNazadC = btnNazad;
+            btnNazadC.Anchor = AnchorStyles.None;
+            btnNazadC.Location = new Point(((this.ClientSize.Width - btnNazadC.Width) / 2), 660);
         }
 
         public DataGridView tablica;
@@ -217,14 +221,14 @@ namespace DinamickoProgramiranje
         {
             gbTablica = new GroupBox();
             gbTablica.Text = "Usporedba:";
-            Font font = new Font("Comic Sans MS", 10.2f, FontStyle.Bold);
+            Font font = new Font("Comic Sans MS", 13.8f, FontStyle.Bold);
             gbTablica.Font = font;
-            gbTablica.Location = new Point(473, 99);
+            gbTablica.Location = new Point(683, 228);
             gbTablica.AutoSize = true;
 
             Panel panel = new Panel();
-            panel.Location = new Point(20, 20);
-            panel.Size = new Size(575,125);
+            panel.Location = new Point(20, 40);
+            panel.Size = new Size(575,135);
 
             tablica = new DataGridView(); 
             tablica.ColumnCount = 3;
