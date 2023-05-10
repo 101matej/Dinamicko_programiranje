@@ -5,7 +5,7 @@ VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DinamickoProgramiranje", "DinamickoProgramiranje\DinamickoProgramiranje.csproj", "{3E0F2A72-76AE-4B2F-B6E2-7B78727FEB27}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{A415A203-11CB-4B32-8EC6-039A96961BD9}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{15899D19-E3CD-4D6E-AA64-186ED4CBFFB7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,8 +17,8 @@ Global
 		{3E0F2A72-76AE-4B2F-B6E2-7B78727FEB27}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3E0F2A72-76AE-4B2F-B6E2-7B78727FEB27}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3E0F2A72-76AE-4B2F-B6E2-7B78727FEB27}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A415A203-11CB-4B32-8EC6-039A96961BD9}.Debug|Any CPU.ActiveCfg = Debug
-		{A415A203-11CB-4B32-8EC6-039A96961BD9}.Release|Any CPU.ActiveCfg = Release
+		{15899D19-E3CD-4D6E-AA64-186ED4CBFFB7}.Debug|Any CPU.ActiveCfg = Debug
+		{15899D19-E3CD-4D6E-AA64-186ED4CBFFB7}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
