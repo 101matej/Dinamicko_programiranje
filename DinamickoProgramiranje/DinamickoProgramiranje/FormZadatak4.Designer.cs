@@ -287,6 +287,7 @@
             this.Controls.Add(this.gbIzracun);
             this.Controls.Add(this.gbPojmovnik);
             this.Controls.Add(this.btnNazad);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormZadatak4";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Metoda usporedbe ukupnih troškova ponude";

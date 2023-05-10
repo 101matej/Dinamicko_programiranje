@@ -143,7 +143,7 @@
             this.lbM.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lbM.Location = new System.Drawing.Point(27, 48);
             this.lbM.Name = "lbM";
-            this.lbM.Size = new System.Drawing.Size(119, 28);
+            this.lbM.Size = new System.Drawing.Size(95, 22);
             this.lbM.TabIndex = 12;
             this.lbM.Text = "Unesite M:";
             // 
@@ -217,6 +217,7 @@
             this.Controls.Add(this.gbIzracun);
             this.Controls.Add(this.gbPojmovnik);
             this.Controls.Add(this.btnNazad);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormZadatak3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Optimalni broj dana opskrbljivanja";

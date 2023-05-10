@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormModeliZaliha));
             this.btnZad1 = new System.Windows.Forms.Button();
             this.btnZad2 = new System.Windows.Forms.Button();
             this.btnZad3 = new System.Windows.Forms.Button();
@@ -119,6 +120,7 @@
             this.ClientSize = new System.Drawing.Size(1999, 803);
             this.Controls.Add(this.btnNazad);
             this.Controls.Add(this.gbZadaci);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormModeliZaliha";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Modeli zaliha";

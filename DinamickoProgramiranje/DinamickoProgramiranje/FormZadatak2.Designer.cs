@@ -217,6 +217,7 @@
             this.Controls.Add(this.gbIzracun);
             this.Controls.Add(this.btnNazad);
             this.Controls.Add(this.gbPojmovnik);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormZadatak2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Optimalni broj jedinica po jednoj narudžbi";
