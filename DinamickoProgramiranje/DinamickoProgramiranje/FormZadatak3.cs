@@ -42,7 +42,7 @@ namespace DinamickoProgramiranje
 
             Button btnNazadC = btnNazad;
             btnNazadC.Anchor = AnchorStyles.None;
-            btnNazadC.Location = new Point(((this.ClientSize.Width - btnNazadC.Width) / 2), (2 * gbCI.Height + 200));
+            btnNazadC.Location = new Point(((this.ClientSize.Width - btnNazadC.Width) / 2), (2 * gbCI.Height + 190));
         }
 
         private void btnNazad_Click(object sender, EventArgs e)
@@ -73,6 +73,7 @@ namespace DinamickoProgramiranje
             rtbPostupak.AppendText($"T = √((266450*P)/(M*R*C))\n");
             rtbPostupak.AppendText($"T = √(({broj}*{numP})/({numM}*{numR}*{numC}))\n");
             rtbPostupak.AppendText($"T = {numT}\n");
+            rtbPostupak.SelectionFont = new Font(rtbPostupak.Font, FontStyle.Bold);
             rtbPostupak.AppendText($"T ≈ {numTZaokruzeno}\n");
         }
     }

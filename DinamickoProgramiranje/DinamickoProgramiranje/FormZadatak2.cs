@@ -72,6 +72,7 @@ namespace DinamickoProgramiranje
             rtbPostupak.AppendText($"Q = √((2*M*P)/(R*C))\n");
             rtbPostupak.AppendText($"Q = √((2*{numM}*{numP})/({numR}*{numC}))\n");
             rtbPostupak.AppendText($"Q = {numQ}\n");
+            rtbPostupak.SelectionFont = new Font(rtbPostupak.Font, FontStyle.Bold);
             rtbPostupak.AppendText($"Q ≈ {numQZaokruzeno}\n");
         }
     }

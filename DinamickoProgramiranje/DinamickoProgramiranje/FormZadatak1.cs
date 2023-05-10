@@ -69,7 +69,8 @@ namespace DinamickoProgramiranje
             numNZaokruzeno = (int)Math.Round(numN,0);
             rtbPostupak.AppendText($"N = √((A*C)/(2*P))\n");
             rtbPostupak.AppendText($"N = √(({numA}*{numC})/(2*{numP}))\n");
-            rtbPostupak.AppendText($"N = {numN}\n");        
+            rtbPostupak.AppendText($"N = {numN}\n");
+            rtbPostupak.SelectionFont = new Font(rtbPostupak.Font, FontStyle.Bold);
             rtbPostupak.AppendText($"N ≈ {numNZaokruzeno}\n");
         }
     }
