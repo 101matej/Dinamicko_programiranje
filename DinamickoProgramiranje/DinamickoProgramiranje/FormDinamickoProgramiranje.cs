@@ -339,6 +339,10 @@ namespace DinamickoProgramiranje
             dgvTablica2.Rows[brojRazdoblja - 1].Cells[4].Value = 0;
             dgvTablica2.Rows[brojRazdoblja].Cells[4].Value = "SUMA STUPACA";
             dgvTablica2.Rows[brojRazdoblja + 1].Cells[5].Value = "UKUPNO";
+
+            dgvTablica2.Columns[4].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            dgvTablica2.Columns[5].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            dgvTablica2.Columns[6].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
         }
 
         private void izracunajOstaleVrijednosti()
@@ -402,7 +406,17 @@ namespace DinamickoProgramiranje
             ukupno = sumaCp + sumaCh;
             dgvTablica2.Rows[brojRazdoblja + 1].Cells[6].Value = ukupno;
 
-            MessageBox.Show("Cijena optimalne količine naručivanja i skladištenja iznosi: " + ukupno + ".");
+            dgvTablica2.Rows[brojRazdoblja + 1].Cells[5].Style.Font = new Font(dgvTablica2.Font, FontStyle.Bold);
+            dgvTablica2.Rows[brojRazdoblja].Cells[4].Style.Font = new Font(dgvTablica2.Font, FontStyle.Bold);
+
+            dgvTablica2.Rows[brojRazdoblja + 1].Cells[5].Style.BackColor = Color.LightGreen;
+            dgvTablica2.Rows[brojRazdoblja + 1].Cells[6].Style.BackColor = Color.LightGreen;
+            
+            dgvTablica2.Rows[brojRazdoblja].Cells[4].Style.BackColor = Color.LightCoral;
+            dgvTablica2.Rows[brojRazdoblja].Cells[5].Style.BackColor = Color.LightCoral;
+            dgvTablica2.Rows[brojRazdoblja].Cells[6].Style.BackColor = Color.LightCoral;
+
+            rtbRjesenje.AppendText("Cijena optimalne količine naručivanja i skladištenja iznosi: " + ukupno + ".");
         }
 
         private void btnNazad_Click(object sender, EventArgs e)

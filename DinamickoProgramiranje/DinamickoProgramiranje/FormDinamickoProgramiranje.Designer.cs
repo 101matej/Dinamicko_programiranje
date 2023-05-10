@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDinamickoProgramiranje));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -47,6 +48,7 @@
             this.btnNazad = new System.Windows.Forms.Button();
             this.dgvTablica2 = new System.Windows.Forms.DataGridView();
             this.btnAnaliza = new System.Windows.Forms.Button();
+            this.rtbRjesenje = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTablica1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTablica2)).BeginInit();
             this.SuspendLayout();
@@ -55,7 +57,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(24, 30);
+            this.label1.Location = new System.Drawing.Point(79, 62);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(104, 25);
             this.label1.TabIndex = 0;
@@ -65,7 +67,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(24, 80);
+            this.label2.Location = new System.Drawing.Point(79, 112);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(231, 25);
             this.label2.TabIndex = 1;
@@ -75,7 +77,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(24, 130);
+            this.label3.Location = new System.Drawing.Point(79, 162);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(275, 25);
             this.label3.TabIndex = 2;
@@ -85,7 +87,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(24, 180);
+            this.label4.Location = new System.Drawing.Point(79, 212);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(193, 25);
             this.label4.TabIndex = 3;
@@ -95,7 +97,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(24, 230);
+            this.label5.Location = new System.Drawing.Point(79, 262);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(189, 25);
             this.label5.TabIndex = 4;
@@ -105,7 +107,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(24, 280);
+            this.label6.Location = new System.Drawing.Point(79, 312);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(137, 25);
             this.label6.TabIndex = 5;
@@ -114,7 +116,7 @@
             // tbIznosRata
             // 
             this.tbIznosRata.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbIznosRata.Location = new System.Drawing.Point(331, 28);
+            this.tbIznosRata.Location = new System.Drawing.Point(386, 60);
             this.tbIznosRata.Name = "tbIznosRata";
             this.tbIznosRata.Size = new System.Drawing.Size(89, 28);
             this.tbIznosRata.TabIndex = 6;
@@ -122,7 +124,7 @@
             // tbMaksimalnaKolicinaZaliha
             // 
             this.tbMaksimalnaKolicinaZaliha.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbMaksimalnaKolicinaZaliha.Location = new System.Drawing.Point(331, 78);
+            this.tbMaksimalnaKolicinaZaliha.Location = new System.Drawing.Point(386, 110);
             this.tbMaksimalnaKolicinaZaliha.Name = "tbMaksimalnaKolicinaZaliha";
             this.tbMaksimalnaKolicinaZaliha.Size = new System.Drawing.Size(89, 28);
             this.tbMaksimalnaKolicinaZaliha.TabIndex = 7;
@@ -130,7 +132,7 @@
             // tbMaksimalnaKolicinaNarucivanja
             // 
             this.tbMaksimalnaKolicinaNarucivanja.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbMaksimalnaKolicinaNarucivanja.Location = new System.Drawing.Point(331, 128);
+            this.tbMaksimalnaKolicinaNarucivanja.Location = new System.Drawing.Point(386, 160);
             this.tbMaksimalnaKolicinaNarucivanja.Name = "tbMaksimalnaKolicinaNarucivanja";
             this.tbMaksimalnaKolicinaNarucivanja.Size = new System.Drawing.Size(89, 28);
             this.tbMaksimalnaKolicinaNarucivanja.TabIndex = 8;
@@ -138,7 +140,7 @@
             // tbTroskoviSkladistenja
             // 
             this.tbTroskoviSkladistenja.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbTroskoviSkladistenja.Location = new System.Drawing.Point(331, 178);
+            this.tbTroskoviSkladistenja.Location = new System.Drawing.Point(386, 210);
             this.tbTroskoviSkladistenja.Name = "tbTroskoviSkladistenja";
             this.tbTroskoviSkladistenja.Size = new System.Drawing.Size(89, 28);
             this.tbTroskoviSkladistenja.TabIndex = 9;
@@ -146,7 +148,7 @@
             // tbTroskoviPoNarudzbi
             // 
             this.tbTroskoviPoNarudzbi.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbTroskoviPoNarudzbi.Location = new System.Drawing.Point(331, 228);
+            this.tbTroskoviPoNarudzbi.Location = new System.Drawing.Point(386, 260);
             this.tbTroskoviPoNarudzbi.Name = "tbTroskoviPoNarudzbi";
             this.tbTroskoviPoNarudzbi.Size = new System.Drawing.Size(89, 28);
             this.tbTroskoviPoNarudzbi.TabIndex = 10;
@@ -154,7 +156,7 @@
             // tbBrojRazdoblja
             // 
             this.tbBrojRazdoblja.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbBrojRazdoblja.Location = new System.Drawing.Point(331, 278);
+            this.tbBrojRazdoblja.Location = new System.Drawing.Point(386, 310);
             this.tbBrojRazdoblja.Name = "tbBrojRazdoblja";
             this.tbBrojRazdoblja.Size = new System.Drawing.Size(89, 28);
             this.tbBrojRazdoblja.TabIndex = 11;
@@ -164,7 +166,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(24, 330);
+            this.label7.Location = new System.Drawing.Point(79, 362);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(222, 25);
             this.label7.TabIndex = 13;
@@ -174,26 +176,26 @@
             // 
             this.panelKontejner.AutoScroll = true;
             this.panelKontejner.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panelKontejner.Location = new System.Drawing.Point(29, 369);
+            this.panelKontejner.Location = new System.Drawing.Point(84, 401);
             this.panelKontejner.Name = "panelKontejner";
-            this.panelKontejner.Size = new System.Drawing.Size(301, 382);
+            this.panelKontejner.Size = new System.Drawing.Size(327, 382);
             this.panelKontejner.TabIndex = 14;
             // 
             // dgvTablica1
             // 
             this.dgvTablica1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvTablica1.Location = new System.Drawing.Point(471, 58);
+            this.dgvTablica1.Location = new System.Drawing.Point(526, 90);
             this.dgvTablica1.Name = "dgvTablica1";
             this.dgvTablica1.RowHeadersWidth = 51;
             this.dgvTablica1.RowTemplate.Height = 24;
-            this.dgvTablica1.Size = new System.Drawing.Size(886, 277);
+            this.dgvTablica1.Size = new System.Drawing.Size(993, 277);
             this.dgvTablica1.TabIndex = 15;
             // 
             // btnIzracunaj
             // 
             this.btnIzracunaj.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnIzracunaj.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIzracunaj.Location = new System.Drawing.Point(577, 360);
+            this.btnIzracunaj.Location = new System.Drawing.Point(673, 391);
             this.btnIzracunaj.Name = "btnIzracunaj";
             this.btnIzracunaj.Size = new System.Drawing.Size(695, 59);
             this.btnIzracunaj.TabIndex = 16;
@@ -205,7 +207,7 @@
             // 
             this.btnNazad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnNazad.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNazad.Location = new System.Drawing.Point(1123, 759);
+            this.btnNazad.Location = new System.Drawing.Point(1246, 849);
             this.btnNazad.Name = "btnNazad";
             this.btnNazad.Size = new System.Drawing.Size(234, 59);
             this.btnNazad.TabIndex = 17;
@@ -216,18 +218,18 @@
             // dgvTablica2
             // 
             this.dgvTablica2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvTablica2.Location = new System.Drawing.Point(350, 444);
+            this.dgvTablica2.Location = new System.Drawing.Point(526, 519);
             this.dgvTablica2.Name = "dgvTablica2";
             this.dgvTablica2.RowHeadersWidth = 51;
             this.dgvTablica2.RowTemplate.Height = 24;
-            this.dgvTablica2.Size = new System.Drawing.Size(1007, 298);
+            this.dgvTablica2.Size = new System.Drawing.Size(993, 298);
             this.dgvTablica2.TabIndex = 18;
             // 
             // btnAnaliza
             // 
             this.btnAnaliza.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btnAnaliza.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAnaliza.Location = new System.Drawing.Point(385, 759);
+            this.btnAnaliza.Location = new System.Drawing.Point(578, 849);
             this.btnAnaliza.Name = "btnAnaliza";
             this.btnAnaliza.Size = new System.Drawing.Size(356, 59);
             this.btnAnaliza.TabIndex = 19;
@@ -235,11 +237,20 @@
             this.btnAnaliza.UseVisualStyleBackColor = false;
             this.btnAnaliza.Click += new System.EventHandler(this.btnAnaliza_Click);
             // 
+            // rtbRjesenje
+            // 
+            this.rtbRjesenje.Location = new System.Drawing.Point(1569, 614);
+            this.rtbRjesenje.Name = "rtbRjesenje";
+            this.rtbRjesenje.Size = new System.Drawing.Size(339, 118);
+            this.rtbRjesenje.TabIndex = 20;
+            this.rtbRjesenje.Text = "";
+            // 
             // FormDinamickoProgramiranje
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1374, 830);
+            this.ClientSize = new System.Drawing.Size(1957, 937);
+            this.Controls.Add(this.rtbRjesenje);
             this.Controls.Add(this.btnAnaliza);
             this.Controls.Add(this.dgvTablica2);
             this.Controls.Add(this.btnNazad);
@@ -259,9 +270,11 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormDinamickoProgramiranje";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dinamičko programiranje";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.dgvTablica1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTablica2)).EndInit();
             this.ResumeLayout(false);
@@ -290,5 +303,6 @@
         private System.Windows.Forms.Button btnNazad;
         private System.Windows.Forms.DataGridView dgvTablica2;
         private System.Windows.Forms.Button btnAnaliza;
+        private System.Windows.Forms.RichTextBox rtbRjesenje;
     }
 }
