@@ -12,8 +12,8 @@ namespace DinamickoProgramiranje
 {
     public partial class FormZadatak4 : Form
     {
-        double numC, numRabat, numQ, numGTS, numARabat, numIPJNRabat, numGTSRabat, numGTN, numIPJN, numSZUKO, numUkupnoBezRabata;
-        int numM, numP, numR, numQZaokruzeno, numUkupnoSRabatom, numA, numARabatZaokruzeno, numGTNZaokruzeno, numIPJNZaokruzeno, numGTNRabat, numIPJNRabatZaokruzeno, numSZUKOZaokruzeno, numGTSZaokruzeno, numMinimalno, numPVZRabat, numGTSRabatZaokruzeno;
+        double numC, numRabat, numQ, numGTS, numARabat, numIPJNRabat, numGTSRabat, numGTN, numIPJN, numSZUKO, numUkupnoBezRabata, numGTNRabat, numPVZRabat, numUkupnoSRabatom;
+        int numM, numP, numR, numQZaokruzeno, numA, numARabatZaokruzeno, numGTNZaokruzeno, numIPJNZaokruzeno, numGTNRabatZaokruzeno, numIPJNRabatZaokruzeno, numSZUKOZaokruzeno, numGTSZaokruzeno, numMinimalno, numPVZRabatZaokruzeno, numGTSRabatZaokruzeno;
         bool tablicaPostoji = false;
 
         private void FormZadatak4_Load(object sender, EventArgs e)
@@ -170,7 +170,7 @@ namespace DinamickoProgramiranje
         private void izracunajSRabatom()
         {
             //UKUPNA VRIJEDNOST MATERIJALA POTREBNOG U JEDNOJ GODINI UZ KOLIČINSKI RABAT
-            numARabat = numM * numR * (1 - numRabat);
+            numARabat = Math.Round((double)numM * numR * (1 - numRabat),2);
             numARabatZaokruzeno = (int)Math.Round(numARabat, 0);
             rtbPostupakSRabatom.AppendText("Ukupna vrijednost materijala potrebnog u jednoj godini uz količinski rabat (A)\n");
             rtbPostupakSRabatom.AppendText($"A = M*R*(1-Rabat)\n");
@@ -179,14 +179,16 @@ namespace DinamickoProgramiranje
             rtbPostupakSRabatom.AppendText($"A ≈ {numARabatZaokruzeno}\n\n");
 
             //GODIŠNJI TROŠAK NARUDŽBE
-            numGTNRabat = (numM / numMinimalno) * numP;
+            numGTNRabat = Math.Round((double)numM / numMinimalno * numP,2);
+            numGTNRabatZaokruzeno = (int)Math.Round(numGTNRabat, 0);
             rtbPostupakSRabatom.AppendText("Godišnji trošak narudžbe (GTN)\n");
             rtbPostupakSRabatom.AppendText($"GTN = (M/Min)*P\n");
             rtbPostupakSRabatom.AppendText($"GTN = ({numM}/{numMinimalno})*{numP}\n");
-            rtbPostupakSRabatom.AppendText($"GTN = {numGTNRabat}\n\n");
+            rtbPostupakSRabatom.AppendText($"GTN = {numGTNRabat}\n");
+            rtbPostupakSRabatom.AppendText($"GTN ≈ {numGTNRabatZaokruzeno}\n\n");
 
             //IZNOS PO JEDNOJ NARUDŽBI UZ KOLIČINSKI RABAT
-            numIPJNRabat = numMinimalno * numR * (1 - numRabat);
+            numIPJNRabat = Math.Round((double)numMinimalno * numR * (1 - numRabat),2);
             numIPJNRabatZaokruzeno = (int)Math.Round(numIPJNRabat, 0);
             rtbPostupakSRabatom.AppendText("Iznos po jednoj narudžbi uz količinski rabat (IPJN)\n");
             rtbPostupakSRabatom.AppendText($"IPJN = Min*R*(1-Rabat)\n");
@@ -195,14 +197,16 @@ namespace DinamickoProgramiranje
             rtbPostupakSRabatom.AppendText($"IPJN ≈ {numIPJNRabatZaokruzeno}\n\n");
 
             //PROSJEČNA VRIJEDNOST ZALIHA
-            numPVZRabat = numIPJNRabatZaokruzeno / 2;
+            numPVZRabat = Math.Round((double)numIPJNRabat / 2,2);
+            numPVZRabatZaokruzeno = (int)Math.Round(numPVZRabat, 0);
             rtbPostupakSRabatom.AppendText("Prosječna vrijednost zaliha (PVZ)\n");
             rtbPostupakSRabatom.AppendText($"PVZ = IPJN/2\n");
-            rtbPostupakSRabatom.AppendText($"PVZ = {numIPJNRabatZaokruzeno}/2\n");
-            rtbPostupakSRabatom.AppendText($"PVZ = {numPVZRabat}\n\n");
+            rtbPostupakSRabatom.AppendText($"PVZ = {numIPJNRabat}/2\n");
+            rtbPostupakSRabatom.AppendText($"PVZ = {numPVZRabat}\n");
+            rtbPostupakSRabatom.AppendText($"PVZ ≈ {numPVZRabatZaokruzeno}\n\n");
 
             //GODIŠNJI TROŠKOVI SKLADIŠTENJA
-            numGTSRabat = numPVZRabat * numC;
+            numGTSRabat = Math.Round(numPVZRabat * numC,2);
             numGTSRabatZaokruzeno = (int)Math.Round(numGTSRabat, 0);
             rtbPostupakSRabatom.AppendText("Godišnji troškovi skladištenja (GTS)\n");
             rtbPostupakSRabatom.AppendText($"GTS = PVZ*C\n");
@@ -211,16 +215,15 @@ namespace DinamickoProgramiranje
             rtbPostupakSRabatom.AppendText($"GTS ≈ {numGTSRabatZaokruzeno}\n\n");
 
             //UKUPNI GODIŠNJI TROŠKOVI MATERIJALA
-            numUkupnoSRabatom = numARabatZaokruzeno + numGTNRabat + numGTSRabatZaokruzeno;
+            numUkupnoSRabatom = numARabat + numGTNRabat + numGTSRabat;
             rtbPostupakSRabatom.AppendText("Ukupni godišnji troškovi materijala (s rabatom)\n");
             rtbPostupakSRabatom.AppendText($"A+GTN+GTS\n");
-
-            rtbPostupakSRabatom.AppendText($"{numARabatZaokruzeno}+{numGTNRabat}+{numGTSRabatZaokruzeno}\n");
-
+            rtbPostupakSRabatom.AppendText($"{numARabat}+{numGTNRabat}+{numGTSRabat}\n");
+            rtbPostupakSRabatom.AppendText($"{numUkupnoSRabatom}\n");
             rtbPostupakSRabatom.SelectionStart = rtbPostupakSRabatom.Text.Length;
             rtbPostupakSRabatom.SelectionLength = numUkupnoSRabatom.ToString().Length;
             rtbPostupakSRabatom.SelectionFont = new Font(rtbPostupakSRabatom.Font, FontStyle.Bold);
-            rtbPostupakSRabatom.AppendText($"{numUkupnoSRabatom}\n\n");
+            rtbPostupakSRabatom.AppendText($"{Math.Round(numUkupnoSRabatom,0)}\n\n");
         }
 
         private void nacrtajTablicu()
@@ -265,11 +268,11 @@ namespace DinamickoProgramiranje
             tablica.Rows[1].Cells[1].Value = numA;
             tablica.Rows[1].Cells[2].Value = numARabatZaokruzeno;
             tablica.Rows[2].Cells[1].Value = numGTNZaokruzeno;
-            tablica.Rows[2].Cells[2].Value = numGTNRabat;
+            tablica.Rows[2].Cells[2].Value = numGTNRabatZaokruzeno;
             tablica.Rows[3].Cells[1].Value = numGTSZaokruzeno;
             tablica.Rows[3].Cells[2].Value = numGTSRabatZaokruzeno;
             tablica.Rows[4].Cells[1].Value = Math.Round(numUkupnoBezRabata, 0);
-            tablica.Rows[4].Cells[2].Value = numUkupnoSRabatom;
+            tablica.Rows[4].Cells[2].Value = Math.Round(numUkupnoSRabatom, 0);
 
             if (numUkupnoBezRabata < numUkupnoSRabatom)
             {
