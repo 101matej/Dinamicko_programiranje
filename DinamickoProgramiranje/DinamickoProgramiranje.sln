@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DinamickoProgramiranje", "D
 EndProject
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{15899D19-E3CD-4D6E-AA64-186ED4CBFFB7}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{67EA0406-D343-481B-B322-DD42AD4F9D71}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,8 @@ Global
 		{3E0F2A72-76AE-4B2F-B6E2-7B78727FEB27}.Release|Any CPU.Build.0 = Release|Any CPU
 		{15899D19-E3CD-4D6E-AA64-186ED4CBFFB7}.Debug|Any CPU.ActiveCfg = Debug
 		{15899D19-E3CD-4D6E-AA64-186ED4CBFFB7}.Release|Any CPU.ActiveCfg = Release
+		{67EA0406-D343-481B-B322-DD42AD4F9D71}.Debug|Any CPU.ActiveCfg = Debug
+		{67EA0406-D343-481B-B322-DD42AD4F9D71}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
