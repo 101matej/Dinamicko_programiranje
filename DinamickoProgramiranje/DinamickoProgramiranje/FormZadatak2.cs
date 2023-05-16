@@ -44,6 +44,7 @@ namespace DinamickoProgramiranje
             btnNazadC.Location = new Point(((this.ClientSize.Width - btnNazadC.Width) / 2), (2 * gbCI.Height + 220));
         }
 
+
         private void btnNazad_Click(object sender, EventArgs e)
         {
             this.Close();

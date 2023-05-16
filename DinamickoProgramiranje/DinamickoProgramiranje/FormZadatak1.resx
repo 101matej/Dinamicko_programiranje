@@ -120,6 +120,8 @@
   <data name="rtbPojmovnik.Text" xml:space="preserve">
     <value>N - optimalni broj narudžbi u jednoj godini kojim se minimiziraju ukupni troškovi zaliha
 A - ukupna vrijednost materijala potrebnog u jednoj godini
+M - ukupan broj jedinica materijala potreban u jednoj godini
+R - cijena po jednoj jedinici materijala
 P - troškovi po jednoj narudžbi
 C - troškovi uskladištenja izraženi u postotku od prosječne vrijednosti zaliha</value>
   </data>
